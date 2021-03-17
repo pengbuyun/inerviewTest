@@ -1,10 +1,12 @@
 <?php
+require_once 'MyGreeter\client.php';
 
 class MyGreeter_Client_Test extends \PHPUnit_Framework_TestCase
 {
+    protected $greeter;
     public function setUp()
     {
-        $this->greeter = new \MyGreeter\Client();
+        $this->greeter = new Client();
     }
 
     public function test_Instance()
